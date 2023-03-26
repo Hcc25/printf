@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _printf - Receives the main string and all the necessary parameters to
@@ -12,17 +12,18 @@ int _printf(const char *format, ...)
 	conver_t f_list[] = {
 		{"c", print_char},
 		{"s", print_string},
-		{"%", print_percent},
 		{"d", print_integer},
 		{"i", print_integer},
+		{"%", print_percent},
 		{NULL, NULL}
 	};
 	va_list arg_list;
 
-	if (formart == NULL)
+	if (format == NULL)
 		return (-1);
-	va_start(arg_list, formart);
-	/*calling parser Function*/
+
+	va_start(arg_list, format);
+	/*Calling parser function*/
 	printed_chars = parser(format, f_list, arg_list);
 	va_end(arg_list);
 	return (printed_chars);
