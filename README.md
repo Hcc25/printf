@@ -1,3 +1,3 @@
 # printf
-this is a printf group project.
+Custom printf function
 # printf
