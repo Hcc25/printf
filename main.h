@@ -29,4 +29,8 @@ int print_integer(va_list);
 int print_number(va_list);
 int _write_char(char);
 int print_binary(va_list);
+/* utility functions */
+char *rev_string(char *);
+void write_base(char *str);
+char *_memcpy(char *dest, char *src, unsigned int n);
 #endif
