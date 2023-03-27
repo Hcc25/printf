@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+int hex_check(int num, char x);
 /**
  * print_binary - Converts a number from base 10 to binary
  * @list: List of arguments passed to this function
@@ -168,5 +169,23 @@ int print_heX(va_list list)
 	free(hex_rep);
 	free(rev_hex);
 	return (len);
+}
+/**
+ * hex_check - Checks which hex function is calling it
+ * @num: Number to convert into letter
+ * @x: Tells which hex function is calling it
+ * Return: Ascii value for a letter
+ */
+int hex_check(int num, char x)
+{
+	char *hex = "abcdef";
+	char *Hex = "ABCDEF";
+
+	num = num - 10;
+	if (x == 'x')
+		return (hex[num]);
+	else
+		return (Hex[num]);
+	return (0);
 }
 
