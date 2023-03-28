@@ -29,6 +29,7 @@ int print_integer(va_list);
 int print_number(va_list);
 int print_binary(va_list);
 int _write_char(char);
+<<<<<<< HEAD
 
 /* utility functions */
 unsigned int base_len(unsigned int, int);
@@ -37,4 +38,16 @@ void write_base(char *str);
 char *_memcpy(char *dest, char *src, unsigned int n);
 int print_unsigned_number(unsigned int);
 
+=======
+int print_binary(va_list);
+int unsigned_integer(va_list);
+int print_octal(va_list list);
+int print_hex(va_list list);
+int print_heX(va_list list);
+/* utility functions */
+char *rev_string(char *);
+void write_base(char *str);
+unsigned int base_len(unsigned int, int);
+char *_memcpy(char *dest, char *src, unsigned int n);
+>>>>>>> 84e375f3bb4b12c4a68d5582d10f45e2ec811a9e
 #endif
