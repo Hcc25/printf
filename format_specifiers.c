@@ -39,5 +39,3 @@ int print_percent(__attribute__((unused))va_list list)
 	_write_char('%');
 	return (1);
 }
-
-
