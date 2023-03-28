@@ -30,4 +30,11 @@ int print_number(va_list);
 int print_binary(va_list);
 int _write_char(char);
 
+/* utility functions */
+unsigned int base_len(unsigned int, int);
+char *rev_string(char *);
+void write_base(char *str);
+char *_memcpy(char *dest, char *src, unsigned int n);
+int print_unsigned_number(unsigned int);
+
 #endif
