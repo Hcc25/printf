@@ -1,17 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * write_base - prints characters on standard outpu
- * @str: a string
- */
-void write_base(char *str)
-{
-	int i;
-
-	for (i = 0; str[i] != '\0'; i++)
-		_write_char(str[i]);
-}
-/**
  * rev_string - reverses a string in place
  *
  * @s: string to reverse
@@ -39,6 +28,17 @@ char *rev_string(char *s)
 		dest[head] = tmp;
 	}
 	return (dest);
+}
+/**
+ * write_base - sends characters to be written on standard output
+ * @str: String to parse
+ */
+void write_base(char *str)
+{
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+		_write_char(str[i]);
 }
 /**
  * _memcpy - copy memory area

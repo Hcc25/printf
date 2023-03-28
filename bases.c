@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
-int hex_check(int num, char x);
+int hex_check(int, char);
+
 /**
  * print_binary - Converts a number from base 10 to binary
  * @list: List of arguments passed to this function
@@ -40,6 +41,7 @@ int print_binary(va_list list)
 	free(rev_str);
 	return (len);
 }
+
 /**
  * print_octal - Prints the numeric representation of a number in octal base
  * @list: List of all the arguments passed to the program
@@ -170,6 +172,7 @@ int print_heX(va_list list)
 	free(rev_hex);
 	return (len);
 }
+
 /**
  * hex_check - Checks which hex function is calling it
  * @num: Number to convert into letter
@@ -188,4 +191,3 @@ int hex_check(int num, char x)
 		return (Hex[num]);
 	return (0);
 }
-
