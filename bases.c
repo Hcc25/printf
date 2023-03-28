@@ -176,7 +176,7 @@ int print_heX(va_list list)
 /**
  * hex_check - Checks which hex function is calling it
  * @num: Number to convert into letter
- * @x: Tells which hex function is calling it
+ * @x: Tells which hex function is calling iy
  * Return: Ascii value for a letter
  */
 int hex_check(int num, char x)
