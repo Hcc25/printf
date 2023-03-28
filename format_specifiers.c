@@ -51,6 +51,10 @@ int print_integer(va_list list)
 	num_length = print_number(list);
 	return (num_length);
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 84e375f3bb4b12c4a68d5582d10f45e2ec811a9e
 /**
  * unsigned_integer - Prints Unsigned integers
  * @list: List of all of the argumets
@@ -63,9 +67,17 @@ int unsigned_integer(va_list list)
 	num = va_arg(list, unsigned int);
 
 	if (num == 0)
-		return (print_unsgined_number(num));
+<<<<<<< HEAD
+		return (print_unsigned_number(num));
 
 	if (num < 1)
 		return (-1);
-	return (print_unsgined_number(num));
+	return (print_unsigned_number(num));
+=======
+		return (print_unsigned_number(num));
+
+	if (num < 1)
+		return (-1);
+	return (print_unsigned_number(num));
+>>>>>>> 84e375f3bb4b12c4a68d5582d10f45e2ec811a9e
 }
