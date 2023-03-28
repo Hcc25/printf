@@ -15,6 +15,10 @@ int _printf(const char *format, ...)
                 {"%", print_percent},
 		{"r", print_reversed},
 		{"b", print_binary},
+		{"u", unsigned_integer},
+		{"o", print_octal},
+		{"x", print_hex},
+		{"X", print_heX},
 		{"d", print_integer},
 		{"i", print_integer},
                 {NULL, NULL}
