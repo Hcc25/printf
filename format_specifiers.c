@@ -74,10 +74,10 @@ int unsigned_integer(va_list list)
 		return (-1);
 	return (print_unsigned_number(num));
 =======
-		return (print_unsgined_number(num));
+		return (print_unsigned_number(num));
 
 	if (num < 1)
 		return (-1);
-	return (print_unsgined_number(num));
+	return (print_unsigned_number(num));
 >>>>>>> 84e375f3bb4b12c4a68d5582d10f45e2ec811a9e
 }
